@@ -51,8 +51,60 @@
     <link rel="stylesheet" href="./normalize.css" />
     <title>React Shopping Cart</title>
     <link href="./static/css/main.aa85e6f5.chunk.css" rel="stylesheet" />
+    <style>
+      @font-face {
+          font-family: GraublauWeb;
+          src: url("Shorelines Script Bold.otf") format("opentype");
+      }
+      a{text-decoration:none;}
+      body>header{
+        box-shadow: 0 0 10px 1px;
+      }
+      body>header>h1{
+        font-family: GraublauWeb;
+        text-align: center;
+        margin: 0;
+        padding: 1em 0 0;
+      }
+      body>header>h1>span{
+        background: url("logo.png") no-repeat center center;
+        background-size: cover;
+        object-fit: contain;
+        padding: .5em 1em;
+        border-radius: 0 0 2em 2em;
+        color:transparent;
+      }
+
+      header>menu{
+        position: absolute;
+        top: 0;
+        list-style: none;
+        padding: 0 1em;
+      }
+      header>menu>li{
+        float: left;
+        margin: 0 1em;
+        padding: .5em;
+        border: 1px dotted;
+        border-radius: .5em;
+      }
+      header>menu>li:hover{
+        background:black;
+      }
+      header>menu>li:hover>a{
+        color:white;
+      }
+    </style>
   </head>
   <body>
+    <header>
+      <h1>CREMER<span>I</span>E</h1>
+      <menu>
+        <li><a href="#">#lien 1</a></li>
+        <li><a href="#">#lien 2</a></li>
+        <li><a href="#">#lien 3</a></li>
+      </menu>
+    </header>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script
