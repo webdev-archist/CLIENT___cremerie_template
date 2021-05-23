@@ -61,7 +61,7 @@
         box-shadow: 0 0 10px 1px;
       }
       body>header>p{
-        font-family: GraublauWeb;
+        font-family: arial;
         text-align: center;
         font-size: xx-large;
         margin: 0;
@@ -73,13 +73,20 @@
         padding: 1em 0 0;
       }
       body>header>h1>span{
+        position:relative;
+      }
+      body>header>h1>span>span{
         margin:0 -5px;
         background: url("logo.png") no-repeat center center;
-        background-size: cover;
-        object-fit: contain;
-        padding: .5em 1em;
+        background-size: contain;
+        padding: .5em .5em;
         border-radius: 0 0 2em 2em;
-        color:transparent;
+        color: transparent;
+        position: absolute;
+        top: -6px;
+        left: 72%;
+        z-index: 0;
+        clip: rect(5px, 27px, 27px, 7px);
       }
 
       header>menu{
@@ -105,7 +112,7 @@
   </head>
   <body>
     <header>
-      <h1>CREMER<span>I</span>E</h1>
+      <h1><span>CREMERIE<span></span></span></h1>
       <menu>
         <li><a href="#">#lien 1</a></li>
         <li><a href="#">#lien 2</a></li>
