@@ -58,13 +58,26 @@
       }
       a{text-decoration:none;}
       body>header{
-        box-shadow: 0 0 10px 1px;
+        box-shadow: 0 0 10px 1px blueviolet;
+        line-height: 30px;
+        border-bottom: 1px dotted gold;
+        background: rgba(255,255,255,1);
+        /* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(100,50,60,.3) 68%, rgba(255,75,10,1) 78%, rgba(255,255,255,1) 89%, rgba(0,0,255,1) 95%, rgb(195 147 238) 100%) */
+        /* background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(12,57,62,1) 68%, rgba(255,0,0,1) 78%, rgba(12,57,62,1) 89%, rgba(0,0,255,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(68%, rgba(12,57,62,1)), color-stop(78%, rgba(255,0,0,1)), color-stop(89%, rgba(12,57,62,1)), color-stop(100%, rgba(0,0,255,1)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(12,57,62,1) 68%, rgba(255,0,0,1) 78%, rgba(12,57,62,1) 89%, rgba(0,0,255,1) 100%);
+        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(12,57,62,1) 68%, rgba(255,0,0,1) 78%, rgba(12,57,62,1) 89%, rgba(0,0,255,1) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(12,57,62,1) 68%, rgba(255,0,0,1) 78%, rgba(12,57,62,1) 89%, rgba(0,0,255,1) 100%); */
+        /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0000ff', GradientType=0 ); */
       }
       body>header>p{
         font-family: arial;
         text-align: center;
-        font-size: xx-large;
+        font-size: 10px;
         margin: 0;
+        font-weight: 900;
+        color: purple;
+        text-shadow: 0 0 1px white, 0 0 5px whitesmoke, 0 0 10px silver;
       }
       body>header>h1{
         font-family: GraublauWeb;
@@ -74,12 +87,14 @@
       }
       body>header>h1>span{
         position:relative;
+        text-shadow: 1px 0 1px red, 1px 0 10px silver, 1px 0 50px gold, 1px 0 20px silver, 1px 0 3px silver, 1px 10px 5px blue, 1px 0 100px silver;
       }
       body>header>h1>span>span{
         margin:0 -5px;
+        box-shadow: 0 0 10px -5px black;
         background: url("logo.png") no-repeat center center;
         background-size: contain;
-        padding: .5em .5em;
+        padding: .4em .4em;
         border-radius: 0 0 2em 2em;
         color: transparent;
         position: absolute;
@@ -108,6 +123,8 @@
       header>menu>li:hover>a{
         color:white;
       }
+      /**/
+      .float-cart .bag--float-cart-closed{border-radius: 0 0 0 10px;}
     </style>
   </head>
   <body>
